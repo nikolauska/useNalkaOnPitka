@@ -1,6 +1,6 @@
 import useRequest from './useRequest';
 import { lunchSchema } from './schemas';
 
-export const useHarald = async () => {
-    return useRequest('/api/harald', lunchSchema);
+export const useHarald = () => {
+    return useRequest('harald', '/api/lunch/harald', lunchSchema);
 }
